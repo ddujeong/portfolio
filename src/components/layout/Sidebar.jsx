@@ -10,8 +10,8 @@ export default function Sidebar() {
                 <p>{profile.intro}</p>
 
                 <div className="links">
-                    <a href={profile.links.github} target="_blank">GitHub</a>
-                    <a href={profile.links.notion} target="_blank">Notion</a>
+                    <a href={profile.links.github} target="_blank" rel="noreferrer">GitHub</a>
+                    <a href={profile.links.notion} target="_blank" rel="noreferrer">Notion</a>
                     <a href={profile.links.email}>Email</a>
                 </div>
             </div>

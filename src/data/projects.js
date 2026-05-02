@@ -3,7 +3,7 @@ export const featuredProjects = [
         title: "Dog-nostic",
         category: "AI Project",
         summary:
-            "이미지 기반 견종 분류를 Grad-CAM 설명, 유사도 추천, RAG 챗봇으로 확장한 반려견 AI 서비스",
+            "모델을 설명·추천·챗봇으로 확장해 서비스 구조로 연결한 AI 시스템",
         tech: [
             "TensorFlow",
             "EfficientNetB0",

@@ -31,10 +31,10 @@ export default function MainContent() {
                     {/* <img src={main.image} alt={`${main.title} 프로젝트 대표 이미지`} /> */}
 
                     <div className="featured-text">
-                        <span className="project-category">{main.category}</span>
+                        <span className="badge">{main.category}</span>
                         <h2>{main.title}</h2>
                         <p>{main.summary}</p>
-
+                        <span className="view-detail">View Details →</span>
                         <div className="tech">
                             {main.tech.map((t) => (
                                 <span key={t}>{t}</span>
@@ -53,9 +53,10 @@ export default function MainContent() {
                             tabIndex={0}
                             onKeyDown={(e) => handleKeyOpen(e, project)}
                         >
-                            <span className="project-category">{project.category}</span>
+                            <span className="badge">{project.category}</span>
                             <h4>{project.title}</h4>
                             <p>{project.summary}</p>
+                            <span className="view-detail">View Details →</span>
                         </div>
                     ))}
                 </div>
@@ -74,7 +75,7 @@ export default function MainContent() {
                             tabIndex={0}
                             onKeyDown={(e) => handleKeyOpen(e, project)}
                         >
-                            <span className="project-category">{project.category}</span>
+                            <span className="badge">{project.category}</span>
                             <h4>{project.title}</h4>
                             <p>{project.summary}</p>
                         </div>
